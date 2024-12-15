@@ -1,0 +1,148 @@
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.messages {
+  display: block;
+  padding: 40px 20px;
+}
+
+.message {
+  display: block;
+  padding: 20px 20px;
+}
+
+.messages .action-buttons {
+  padding: 0;
+  margin-top: -20px;
+}
+
+.message .action-buttons {
+  padding: 0;
+  margin-top: -5px;
+}
+
+.action-buttons .control.is-grouped {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.action-buttons .control.is-grouped:last-child {
+  margin-right: 0;
+}
+
+.action-buttons .control.is-grouped .button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.action-buttons .control.is-grouped .button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.action-buttons .control.is-grouped .button {
+  margin-right: -5px;
+  border-radius: 0;
+}
+
+.pg {
+  display: inline-block;
+  top: 10px;
+}
+
+.action-buttons .pg .title {
+  display: block;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 3px;
+  font-size: 12px;
+  color: #AAAAAA;
+}
+
+.action-buttons .pg a {
+  font-size: 12px;
+  color: #AAAAAA;
+  text-decoration: none;
+}
+
+.is-grouped .button {
+  background-image: linear-gradient(#F8F8F8, #F1F1F1);
+}
+
+.is-grouped .button .fa {
+  font-size: 15px;
+  color: #AAAAAA;
+}
+
+.inbox-messages {
+  margin-top: 20px;
+}
+
+.message-preview {
+  margin-top: 24px;
+}
+
+.inbox-messages .card {
+  width: 100%;
+}
+
+.inbox-messages .msg-check {
+  padding: 0 20px;
+}
+
+.inbox-messages .msg-subject {
+  padding: 10px 0;
+}
+
+.inbox-messages .msg-attachment {
+  float: right;
+}
+
+.inbox-messages .msg-snippet {
+  padding: 5px 20px 0px 0;
+}
+
+.inbox-messages .msg-subject .fa {
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+.inbox-messages .msg-timestamp {
+  float: right;
+  padding: 0 20px;
+  color: #5D5D5D;
+}
+
+.message-preview .avatar {
+  display: inline-block;
+}
+
+.message-preview .top .address {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.avatar img {
+  width: 40px;
+  border-radius: 50px;
+  border: 2px solid #999;
+  padding: 2px;
+}
+
+.address .name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.address .email {
+  font-weight: bold;
+  color: #B6C7D1;
+}
+
+.card.active {
+  background-color: #F5F5F5;
+}

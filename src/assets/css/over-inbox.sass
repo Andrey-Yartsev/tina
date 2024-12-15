@@ -1,0 +1,93 @@
+//:root
+//  color-scheme: dark
+
+.inbox-messages
+  .card
+    margin-bottom: 5px
+  .card-content
+    display: block
+    cursor: pointer
+    padding: 0
+    margin-top: 10px
+    position: relative
+    .msg-subject
+      margin-top: 5px
+      padding: 0
+      display: flex
+    .msg-type
+      display: block
+      position: absolute
+      bottom: 22px
+      left: 85px
+
+    &:hover
+      background: rgba(128, 128, 128, 0.09)
+    img
+      border-top-left-radius: 10px
+      border-bottom-left-radius: 10px
+      height: 70px
+      margin-right: 15px
+
+.messages
+  min-width: 320px
+  padding-right: 15px
+  overflow-y: auto
+  overflow-x: hidden
+  height: 100vh !important
+.columns
+  margin-top: 0
+
+.message-preview
+
+  .person
+    display: flex
+    align-items: center
+    img
+      width: 50px
+  .name
+    a
+      font-size: 20px
+
+
+.action-buttons
+  .shuffle
+    margin-right: 15px !important
+  input.search
+    padding: 3px 0 3px 4px
+    border-color: rgba(128, 128, 128, 0.4)
+    border-width: 1px
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+
+.msg-type
+  color: var(--bulma-text)
+  font-size: 12px
+
+.home
+  font-size: 20px
+  a:hover
+    color: var(--bulma-link-text) !important
+  a.router-link-exact-active
+    color: var(--bulma-link-text) !important
+
+.logo
+  position: absolute
+  right: 20px
+  display: block
+  img
+    height: 30px
+
+.copy
+  position: absolute
+  bottom: 20px
+  right: 20px
+  a
+    text-decoration: none !important
+    color: rgba(128, 128, 128, 0.5) !important
+
+.message-body
+  height: 100vh
+  overflow-y: auto
+
+body
+  -ms-overflow-style: none
