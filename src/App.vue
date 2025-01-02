@@ -10,7 +10,7 @@
       <div class="column is-8 message hero is-fullheight message-body" id="message-pane"
            :class="{'mobile-hide': mobileHideRightColumn}"
       >
-        <router-link to="/" class="logo"><img src="/img/logo.png" alt="TINA"></router-link>
+        <router-link to="/" class="logo"><img src="/img/logo.png" alt="T"></router-link>
         <RouterView />
         <div class="copy"><a href="https://masted.ru" target="_blank">© masted</a></div>
       </div>
@@ -25,7 +25,10 @@ export default {
   components: {LeftColumn, Messages},
   computed: {
     mobileHideLeftColumn() {
-      return this.$route.name === 'message' || this.$route.name === 'types'
+      if (this.$route.name === 'types' || this.$route.name === 'sev' || this.$route.name === 'message') {
+        return true
+      }
+      return false
     },
     mobileHideRightColumn() {
       return this.$route.name === 'home' || this.$route.name === 'home-type'

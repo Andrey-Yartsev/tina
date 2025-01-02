@@ -3,7 +3,7 @@
     <div class="control is-grouped">
       <a class="button is-small shuffle" @click="shuffle" v-if="showShuffle"><i class="fa fa-random"></i></a>
       <input v-model="filter" class="search" placeholder="поиск">
-      &nbsp;&nbsp;&nbsp;<router-link to="/types">категории</router-link>
+      &nbsp;&nbsp;&nbsp;<router-link to="/types">категории <span>🎆</span></router-link>
     </div>
   </div>
   <div class="inbox-messages" id="inbox-messages">

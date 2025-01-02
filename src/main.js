@@ -7,7 +7,8 @@ import MessagePage from './components/MessagePage.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomePage },
-  { path: '/types', name: 'types', component: HomePage }, // only mobile
+  { path: '/types', name: 'types', component: HomePage },
+  { path: '/sev', name: 'sev', component: HomePage },
   { path: '/home/:type', name: 'home-type', component: HomePage },
   { path: '/message/:id', name: 'message', component: MessagePage },
 ]
